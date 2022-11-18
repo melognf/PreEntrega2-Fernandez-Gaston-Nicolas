@@ -8,7 +8,6 @@
 /*********************************/
 
 header {  
-    background-color: #96abc2;
     background-image: url(../multimedia/fondo2.jpg);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
