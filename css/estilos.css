@@ -1,0 +1,1020 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********--  HEADER  --**********/
+/*********************************/
+
+header {  
+    background-color: #96abc2;
+    background-image: url(../Multimedia/fondo2.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo . . . ."
+      ". titulo titulo . ."
+      ". . botonera botonera botonera";
+  }
+  
+  .logo { grid-area: logo; }
+  
+  .titulo { grid-area: titulo; }
+  
+  .botonera { grid-area: botonera; }
+  
+h1 {
+    font-size: 80px;
+    font-family: 'Sedgwick Ave', cursive;
+    color: #007fff;
+    padding: 20px;
+    align-self: flex-start;
+}
+nav {
+    grid-area: botonera;
+    align-self: center;
+    justify-self: end;
+    padding: 20px;
+}
+
+.logo {
+    grid-area: logo;
+    align-self: center;
+    padding: 20px;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 150px;
+    margin-left: 50px;
+}
+
+.menu li:hover {
+    opacity: 1;
+}
+
+.menu li a:hover {
+    background-color: #0034c4;
+    color: #f4f4f2;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    transition: 0.7s ease;
+    border: 1px solid white;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    opacity: .7;
+    align-content: center;
+}
+
+.menu li:hover {
+    opacity: 1;
+}
+
+.menu li a {
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #007fff;
+    color: #f4f4f2;
+    font-family: 'KoHo', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    top: 0;
+}
+
+.menu li a:hover {
+    background-color: #0034c4;
+    color: #f4f4f2;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    transition: 0.7s ease;
+    border: 1px solid white;
+}
+
+/**********--  QUIENES SOMOS  --**********/
+/****************************************/
+
+
+h2 {
+    width: 600px;
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+#quienes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#quienes h2 {
+    margin-top: 80px;
+}
+
+#quienes p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+    padding: 50px;
+    padding-top: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.carousel img {
+   width: 80%; 
+   height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/**********--  INDEX, SECCION 2  --**********/
+/******************************************/
+
+#sec_dos {  
+    margin-bottom: 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "musica cine tecno"
+      "musica cine tecno"
+      "musica cine tecno"
+      "musica cine tecno"
+      "musica cine tecno";
+  }
+  
+  .musica { grid-area: musica; }
+  
+  .cine { grid-area: cine; }
+  
+  .tecno { grid-area: tecno; }
+  
+  .titulo { grid-area: titulo; }
+  
+
+#sec_dos h3 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 50px;
+    padding: 30px;
+}
+
+#sec_dos img {
+    opacity: 0.7;
+}
+
+#sec_dos img:hover {
+    opacity: 1;
+}
+
+.titulo {
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+}
+
+.musica {
+    grid-area: musica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.cine {
+    grid-area: cine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.tecno {
+    grid-area: tecno;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#sec_dos p {
+    max-width: 400px;
+    margin: 10px auto;
+    font-family: 'KoHo', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#sec_dos .margen_cine {
+    margin-top: 80px;
+}
+
+#sec_dos h4 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+#sec_dos h4:hover {
+    font-family: 'Sedgwick Ave', cursive;
+    color: #0034c4;
+    background-color: #96abc2;
+    transition: 0.5s ease-in;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#sec_dos a {
+    text-decoration: none;
+}
+
+/**********--  FOOTER  --**********/
+/*********************************/
+
+.pie_de_pagina {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #1f1e1e;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pie_de_pagina h2 {
+    color: #007fff;
+}
+
+.pie_de_pagina p {
+    padding: 20px;
+    padding-top: 0;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 20px;
+    color: #007fff;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+}
+
+.pie_de_pagina .redes li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.pie_de_pagina .redes li a img {
+    width: 30px;
+}
+
+.pie_de_pagina .footer-menu ul {
+    list-style-type: none;
+    padding: 15px 15px;
+}
+
+.pie_de_pagina .footer-menu ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #007fff;
+    border-radius: 25px;
+    background-color: transparent;
+    margin: 10px;
+    color: #007fff;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+}
+
+.pie_de_pagina .footer-menu ul li:hover {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: white;
+    margin: 0 10px;
+    color: black;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+}
+
+.derechos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1f1e1e;
+}
+
+.derechos p {
+    padding: 20px;
+    font-family: 'KoHo', sans-serif;
+    color: white;
+}
+
+.copy {
+    padding-left: 200px;
+}
+
+/**********--  CONTACTO  --**********/
+/***********************************/
+
+#contacto {
+    padding: 50px;
+}
+
+#contacto h2 {
+    background-color: #96abc2;
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #96abc2;
+    margin-top: 50px;
+}
+
+#contacto p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+}
+
+#formulario {
+    padding: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#formulario h3 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 60px;
+    padding: 80px;
+    color: #007fff;
+    text-align: center;
+    text-shadow: 1px 5px #1f1e1e;
+}
+
+#formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+#formulario form .campos {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+#formulario form label {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'KoHo', sans-serif;
+    background-color: white;
+    padding: 5px;
+}
+
+#formulario form input {
+    width: 800px;
+    font-size: 40px;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 2px solid #1f1e1e;
+    background-color: transparent;
+}
+
+#formulario form .textarea {
+    display: flex;
+    justify-items: center;
+}
+
+#formulario form .enviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#formulario form .enviar button {
+    width: 400px;
+    height: 100px;
+    background-color: #96abc2;
+    border: none;
+    font-family: 'KoHo', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+textarea {
+    width: 800px;
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #1f1e1e;
+    font-size: 20px;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+
+  /**********--  CORTINA, QUIENES SOMOS  --**********/
+/**************************************************/
+
+.animacion {
+    z-index: 1;
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    margin: 50px;
+    top: 610px;
+    left: 45px;
+}
+
+.puerta1 {
+    display: inline-block;
+    z-index: 1;
+    width: 600px;
+    height: 500px;
+    background-color: #96abc2;
+    opacity: 0.5;
+    animation-name: abrir;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    border-radius: 10px 0 0 10px;
+}
+
+.puerta2 {
+    z-index: 1;
+    float: right;
+    width: 600px;
+    height: 500px;
+    background-color: #96abc2;
+    opacity: 0.5;
+    animation-name: abrir;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    border-radius: 0 10px 10px 0;
+}
+
+@keyframes abrir {
+    
+    from {
+        width: 600px;
+    }
+
+    to {
+        width: 0px;
+    }
+
+}
+
+/**********--  EN CONSTRUCCION  --**********/
+/*****************************************/
+
+#construccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Sedgwick Ave', cursive;
+    animation-name: mensaje;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mensaje {
+    0% {
+        font-size: 5px;
+
+    }
+    
+    60% {
+        font-size: 100px;
+        color: white;
+        background-color: #96abc2;
+    }
+
+    100% {
+        font-size: 100px;
+        color: white;
+        background-color: #007fff;
+    }
+}
+
+.parrafos p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+}
+
+
+/**********--  MULTIMEDIA  --**********/
+/***********************************/
+
+
+
+.container_guitarristas {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    padding: 50px;
+    grid-template-areas:
+      ". . . titulo titulo titulo titulo titulo titulo . . ."
+      "david david david . david_video david_video mollo mollo mollo . . ."
+      "david david david david_titulo david_video david_video mollo mollo mollo . . ."
+      ". slash slash . . . mollo mollo mollo . mollo_video mollo_video"
+      ". slash slash . . . mollo mollo mollo mollo_titulo mollo_video mollo_video"
+      ". slash slash . slash_video slash_video . . . . . ."
+      ". slash slash slash_titulo slash_video slash_video mark mark mark . mark_video mark_video"
+      "angus angus angus . . . mark mark mark mark_titulo mark_video mark_video"
+      "angus angus angus . angus_video angus_video . . . . . ."
+      "angus angus angus angus_titulo angus_video angus_video jimi jimi jimi . jimi_video jimi_video"
+      ". . . . . . jimi jimi jimi . jimi_video jimi_video"
+      "eric eric eric eric eric_titulo eric_video eric_video . . jimi_titulo . ."
+      "eric eric eric eric . eric_video eric_video . . . . .";
+  }
+  
+  .titulo { grid-area: titulo; }
+  
+  .david { grid-area: david; }
+  
+  .david_titulo { grid-area: david_titulo; }
+  
+  .david_video { grid-area: david_video; }
+  
+  .mollo { grid-area: mollo; }
+  
+  .mollo_titulo { grid-area: mollo_titulo; }
+  
+  .mollo_video { grid-area: mollo_video; }
+  
+  .slash { grid-area: slash; }
+  
+  .slash_titulo { grid-area: slash_titulo; }
+  
+  .slash_video { grid-area: slash_video; }
+  
+  .mark { grid-area: mark; }
+  
+  .mark_titulo { grid-area: mark_titulo; }
+  
+  .mark_video { grid-area: mark_video; }
+  
+  .angus { grid-area: angus; }
+  
+  .angus_titulo { grid-area: angus_titulo; }
+  
+  .angus_video { grid-area: angus_video; }
+  
+  .eric { grid-area: eric; }
+  
+  .eric_titulo { grid-area: eric_titulo; }
+  
+  .eric_video { grid-area: eric_video; }
+  
+  .jimi { grid-area: jimi; }
+  
+  .jimi_titulo { grid-area: jimi_titulo; }
+  
+  .jimi_video { grid-area: jimi_video; }
+  
+  
+
+.container_guitarristas {
+    background-image: url(../Multimedia/fondoAzul.jpg);
+    background-size: contain;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+.container_guitarristas .titulo span {
+    font-size: 80px;
+    font-family: 'Sedgwick Ave', cursive;
+    align-self: flex-end;
+    padding: 20px;
+    color: white;
+}
+
+.container_guitarristas img {
+    width: 100%;
+  }
+
+.container_guitarristas h5 {
+    color: #0034c4;
+    padding: 20px;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 900;
+  }
+
+.subti {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: #96abc2;
+  }
+  
+.david, .mollo, .slash, .mark, .angus, .jimi, .eric {
+    display: flex;
+    align-self: center;
+  }
+
+.david_video {
+    display: flex;
+    align-self: center;
+  }
+
+.mollo_video {
+    display: flex;
+    align-self: center;
+}
+
+.slash_video {
+    display: flex;
+    align-self: center;
+}
+
+.mark_video {
+    display: flex;
+    align-self: center;
+}
+
+.angus_video {
+    display: flex;
+    align-self: center;
+}
+
+.jimi_video {
+    display: flex;
+    align-self: center;
+}
+
+.eric_video {
+    display: flex;
+    align-self: center;
+}
+
+.david, .david_video, .david_titulo {
+    border: 5px solid yellow;
+    border-radius: 5%;
+  }
+
+.mollo, .mollo_titulo, .mollo_video {
+    border: 5px solid green;
+    border-radius: 5%;
+  }
+
+.slash, .slash_titulo, .slash_video {
+    border: 5px solid white;
+    border-radius: 5%;
+}
+
+.mark, .mark_video, .mark_titulo {
+    border: 5px solid aqua;
+    border-radius: 5%;
+}
+
+.angus, .angus_titulo, .angus_video {
+    border: 5px solid crimson;
+    border-radius: 5%;
+}
+
+.jimi, .jimi_titulo, .jimi_video {
+    border: 5px solid black;
+    border-radius: 5%;
+}
+
+.eric, .eric_titulo, .eric_video {
+    border: 5px solid red;
+    border-radius: 5%;
+}
+
+
+
+/**********--  RESPONSIVE MOVIL  --**********/
+/******************************************/
+
+
+  @media all and (max-width:576px) {
+    
+    header {  
+        background-color: #96abc2;
+        background-image: url(../Multimedia/fondo2.jpg);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "logo logo"
+          "titulo titulo"
+          "botonera botonera";
+      }
+    
+      .carousel img { 
+        height: auto;
+        width: 100%;
+     }
+
+     #sec_dos {  
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        grid-template-areas:
+          "titulo"
+          "musica"
+          "cine"
+          "tecno";
+      }
+      
+    #sec_dos img {
+        width: 100%;
+    }
+      
+     #quienes h2 {
+        padding: 50px;
+        width: 100%;
+        margin-top: 150px;
+     } 
+      
+     #formulario form {
+        width: 100%;
+    }
+
+    #formulario form .campos {
+        flex-direction: column;
+    }
+
+    #formulario form label {
+        font-size: 20px;
+    }
+    
+    
+    #contacto p {
+        width: 100%;
+    }
+
+    #formulario form input {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #contacto h2 {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    textarea {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #formulario form {
+        width: 100%;
+        background-color: #96abc2;
+    }
+
+    #formulario form label {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    #formulario form #background-video {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    #background-video {
+        display: none;
+      }
+
+      #formulario h3 {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 55px;
+        padding: 80px;
+        padding-top: 32px;
+    }
+
+    #formulario form .enviar button {
+        border: 4px solid white;
+    }
+
+    .menu li a {
+        padding: 0;
+        color: #0034c4;
+        background-color: transparent;
+        font-family: 'KoHo', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        top: 0;
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        margin: 10px;
+        opacity: 1;
+        align-content: center;
+    }
+
+    .menu li a:hover {
+        border-radius: 0;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        transition: none;
+        border: none;
+    }
+
+    .menu {
+        background-color: #96abc2;
+        padding: 10px;
+    }
+
+    .animacion {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: auto;
+        left: auto;
+    }
+    
+    .puerta1 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .puerta2 {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .pie_de_pagina p {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    
+    @keyframes mensaje {
+        0% {
+            font-size: 5px;
+    
+        }
+
+        60% {
+            font-size: 30px;
+            color: white;
+            background-color: #96abc2;
+        }
+    
+        100% {
+            font-size: 30px;
+            color: white;
+            background-color: #007fff;
+        }
+    }
+    
+    .parrafos p {
+        font-family: 'KoHo', sans-serif;
+        font-size: 30px;
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+
+    .container_guitarristas {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(22) 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: column;
+        padding: 50px;
+        grid-template-areas:
+          "titulo titulo"
+          "david david"
+          "david_titulo david_titulo"
+          "david_video david_video"
+          "mollo mollo"
+          "mollo_titulo mollo_titulo"
+          "mollo_video mollo_video"
+          "slash slash"
+          "slash_titulo slash_titulo"
+          "slash_video slash_video"
+          "mark mark"
+          "mark_titulo mark_titulo"
+          "mark_video mark_video"
+          "angus angus"
+          "angus_titulo angus_titulo"
+          "angus_video angus_video"
+          "eric eric"
+          "eric_titulo eric_titulo"
+          "eric_video eric_video"
+          "jimi jimi"
+          "jimi_titulo jimi_titulo"
+          "jimi_video jimi_video";
+      }
+      
+      
+    .container_guitarristas .titulo span {
+        font-size: 50px;
+    }
+    
+    .container_guitarristas h5 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+    .subti {
+        align-self: center;
+        width: 100%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+    .david, .mollo, .slash, .mark, .angus, .jimi, .eric {
+        display: flex;
+        align-self: center;
+      }
+    
+    .david_video {
+        display: flex;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+    .angus, .angus_titulo, .angus_video {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .jimi, .jimi_titulo, .jimi_video {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .eric, .eric_titulo, .eric_video {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+  }
