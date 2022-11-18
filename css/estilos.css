@@ -632,7 +632,7 @@ textarea {
     margin-bottom: 100px;
   }
 
-.container_guitarristas .titulo span {
+.container_guitarristas .titulo h2 {
     font-size: 80px;
     font-family: 'Sedgwick Ave', cursive;
     align-self: flex-end;
@@ -972,7 +972,7 @@ textarea {
       }
       
       
-    .container_guitarristas .titulo span {
+    .container_guitarristas .titulo h2 {
         font-size: 50px;
     }
     
