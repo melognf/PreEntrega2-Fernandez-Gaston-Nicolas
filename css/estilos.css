@@ -9,7 +9,7 @@
 
 header {  
     background-color: #96abc2;
-    background-image: url(../Multimedia/fondo2.jpg);
+    background-image: url(../multimedia/fondo2.jpg);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -625,7 +625,7 @@ textarea {
   
 
 .container_guitarristas {
-    background-image: url(../Multimedia/fondoAzul.jpg);
+    background-image: url(../multimedia/fondoAzul.jpg);
     background-size: contain;
     max-width: 90%;
     margin-left: auto;
@@ -745,7 +745,7 @@ textarea {
     
     header {  
         background-color: #96abc2;
-        background-image: url(../Multimedia/fondo2.jpg);
+        background-image: url(../multimedia/fondo2.jpg);
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
