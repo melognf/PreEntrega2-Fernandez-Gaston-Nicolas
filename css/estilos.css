@@ -735,6 +735,241 @@ textarea {
 }
 
 
+/**********--  MUSICA  --*******************/
+/******************************************/
+
+
+
+
+
+
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica h2 {
+    color: #0034c4;
+}
+
+.titsesenta {
+    color: #0034c4;
+}
+
+.titsetenta {
+    color: #0034c4;
+}
+
+#dos_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #0034c4;
+    background-color: #96abc2;
+}
+
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card h5 {
+    color: #007fff;
+}
+
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card p {
+    color: white;
+}
+
+.card {
+    padding: 5px;
+    margin: 10px;
+    background-color: #313030;
+}
+
+.card-group {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#tres_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #2d5e41;
+    background-color: #47a15b;
+}
+
+
+#cuatro_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #efb810;
+    background-color: #cda434;
+}
+
+#cinco_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid white;
+    background-color: #0034c4;
+}
+
+#cinco_musica {
+    margin-bottom: 100px;
+}
+
+.enlaces img {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.menuMusica {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/**********--  CINE  --*********************/
+/******************************************/
+
+
+
+.cineAntiguo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cineAntiguo img {
+    width: 700px;
+    margin-left: 100px;
+    padding: 50px 0 50px 0;
+}
+
+.videoClub {
+    display: flex;
+    flex-direction: column;
+}
+
+.videoClub img {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 50px 0;
+}
+
+.pirata {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pirata img {
+    width: 600px;
+    padding: 50px;
+}
+
+#alquiler .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler . ."
+      "uno dos tres cuatro cinco seis siete ocho nueve diez"
+      "once doce trece catorce quince dieciseis diecisiete dieciocho diecinueve veinte"
+      "veintiuno veintidos veintitres veinticuatro veinticinco veintiseis veintisiete veintiocho veintinueve treinta"
+      "treintiuno treintidos treintitres treinticuatro treinticinco treintiseis treintisiete treintiocho treintinueve cuarenta";
+      margin-bottom: 100px;
+  }
+  
+  .uno { grid-area: uno; }
+  
+  .dos { grid-area: dos; }
+  
+  .tres { grid-area: tres; }
+  
+  .cuatro { grid-area: cuatro; }
+  
+  .cinco { grid-area: cinco; }
+  
+  .seis { grid-area: seis; }
+  
+  .siete { grid-area: siete; }
+  
+  .ocho { grid-area: ocho; }
+  
+  .nueve { grid-area: nueve; }
+  
+  .diez { grid-area: diez; }
+  
+  .once { grid-area: once; }
+  
+  .doce { grid-area: doce; }
+  
+  .trece { grid-area: trece; }
+  
+  .catorce { grid-area: catorce; }
+  
+  .quince { grid-area: quince; }
+  
+  .dieciseis { grid-area: dieciseis; }
+  
+  .diecisiete { grid-area: diecisiete; }
+  
+  .dieciocho { grid-area: dieciocho; }
+  
+  .diecinueve { grid-area: diecinueve; }
+  
+  .veinte { grid-area: veinte; }
+  
+  .veintiuno { grid-area: veintiuno; }
+  
+  .veintidos { grid-area: veintidos; }
+  
+  .veintitres { grid-area: veintitres; }
+  
+  .veinticuatro { grid-area: veinticuatro; }
+  
+  .veinticinco { grid-area: veinticinco; }
+  
+  .veintiseis { grid-area: veintiseis; }
+  
+  .veintisiete { grid-area: veintisiete; }
+  
+  .veintiocho { grid-area: veintiocho; }
+  
+  .veintinueve { grid-area: veintinueve; }
+  
+  .treinta { grid-area: treinta; }
+  
+  .treintiuno { grid-area: treintiuno; }
+  
+  .treintidos { grid-area: treintidos; }
+  
+  .treintitres { grid-area: treintitres; }
+  
+  .treinticuatro { grid-area: treinticuatro; }
+  
+  .treinticinco { grid-area: treinticinco; }
+  
+  .treintiseis { grid-area: treintiseis; }
+  
+  .treintisiete { grid-area: treintisiete; }
+  
+  .treintiocho { grid-area: treintiocho; }
+  
+  .treintinueve { grid-area: treintinueve; }
+  
+  .cuarenta { grid-area: cuarenta; }
+  
+  .tituloAlquiler { grid-area: tituloAlquiler; }
+  
+#alquiler .container img {
+    width: 130px;
+}
+
+#alquiler .tituloAlquiler h3 {
+    font-size: 4rem;
+    font-family: 'Sedgwick Ave', cursive;
+    padding: 50px;
+    color: #007fff;
+    background-color: #313030;
+    text-align: center;
+}
+
+#cineHistoria .pirata {
+    margin-bottom: 100px;
+}
+
+
+
 
 /**********--  RESPONSIVE MOVIL  --**********/
 /******************************************/
@@ -1016,4 +1251,69 @@ textarea {
         margin-bottom: 50px;
     }
 
+    
+    
+    .cineAntiguo img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    
+    
+    .videoClub img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .pirata {
+        flex-direction: column;
+    }
+
+    .pirata img {
+        width: 100%;
+        padding: 50px;
+    }
+    
+    #alquiler .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: column;
+        grid-template-areas:
+          "tituloAlquiler tituloAlquiler tituloAlquiler"
+          "uno dos tres"
+          "cuatro cinco seis"
+          "siete ocho nueve"
+          "diez once doce"
+          "trece catorce quince"
+          "dieciseis diecisiete dieciocho"
+          "diecinueve veinte veintiuno"
+          "veintidos veintitres veinticuatro"
+          "veinticinco veintiseis veintisiete"
+          "veintiocho veintinueve treinta"
+          "treintiuno treintidos treintitres"
+          "treinticuatro treinticinco treintiseis"
+          "treintisiete treintiocho treintinueve"
+          "cuarenta . .";
+      }
+
+      #alquiler .container img {
+        width: 100%;
+    }
+    
+    #alquiler .tituloAlquiler h3 {
+        font-size: 4rem;
+        font-family: 'Sedgwick Ave', cursive;
+        padding: 50px;
+        color: #007fff;
+        background-color: #313030;
+        text-align: center;
+    }
+    
+    #cineHistoria .pirata {
+        margin-bottom: 100px;
+    }
+
+    
   }
