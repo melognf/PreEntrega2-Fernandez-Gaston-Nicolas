@@ -968,6 +968,97 @@ textarea {
     margin-bottom: 100px;
 }
 
+#alquiler .container img:hover {
+    transform: scale(2, 2);
+    transition: 2s;
+    border: 5px solid white;
+}
+
+
+/**********-- TECNOLOGIA  --****************/
+/******************************************/
+
+#dos_tecno {
+    background-color: #96abc2;
+}
+
+#dos_tecno h4 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 3rem;
+}
+
+#dos_tecno .container .telef img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #1f1e1e;
+}
+
+ #dos_tecno .container .telef p {
+    padding: 20px;
+    font-weight: bold;
+}
+
+#dos_tecno .container .telef {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #96abc2;
+}
+
+#tres_tecno iframe {
+    border: 15px solid #2d5e41;
+}
+
+#tres_tecno p {
+    background-color: #313030;
+    color: white;
+    padding: 45px;
+}
+
+#tres_tecno h6 {
+    font-size: 2.5rem;
+    padding: 80px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+#cuatro_tecno .juegos img {
+    width: 300px;
+}
+
+#cuatro_tecno {
+    background-color: #96abc2;
+    margin: 50px 0 50px 0;
+}
+
+#cuatro_tecno .juegos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#cuatro_tecno p {
+    padding: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+#cuatro_tecno img {
+    padding: 20px;
+}
+
+#cuatro_tecno h4 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 3rem;
+}
+
+#cinco_tecno {
+    margin-bottom: 50px;
+}
 
 
 
@@ -1315,5 +1406,24 @@ textarea {
         margin-bottom: 100px;
     }
 
-    
+    #dos_tecno .container .telef {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #dos_tecno .container .telef img {
+        width: 300px;
+        height: auto;
+    }
+
+    #tres_tecno iframe {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #cuatro_tecno img {
+        align-self: center;
+    }
+
   }
