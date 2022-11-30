@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
+h2 {
+    width: 600px;
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 80px;
+}
+
+.parrafos p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+}
+
+
+
 /**********--  HEADER  --**********/
 /*********************************/
+
+
 
 header {  
     background-image: url(../multimedia/fondo2.jpg);
@@ -26,19 +48,6 @@ header {
   
   .botonera { grid-area: botonera; }
   
-h1 {
-    font-size: 80px;
-    font-family: 'Sedgwick Ave', cursive;
-    color: #007fff;
-    padding: 20px;
-    align-self: flex-start;
-}
-nav {
-    grid-area: botonera;
-    align-self: center;
-    justify-self: end;
-    padding: 20px;
-}
 
 .logo {
     grid-area: logo;
@@ -52,18 +61,19 @@ nav {
     margin-left: 50px;
 }
 
-.menu li:hover {
-    opacity: 1;
+h1 {
+    font-size: 80px;
+    font-family: 'Sedgwick Ave', cursive;
+    color: #007fff;
+    padding: 20px;
+    align-self: flex-start;
 }
 
-.menu li a:hover {
-    background-color: #0034c4;
-    color: #f4f4f2;
-    border-radius: 5px;
-    position: relative;
-    top: 10px;
-    transition: 0.7s ease;
-    border: 1px solid white;
+nav {
+    grid-area: botonera;
+    align-self: center;
+    justify-self: end;
+    padding: 20px;
 }
 
 .menu li {
@@ -101,18 +111,12 @@ nav {
     border: 1px solid white;
 }
 
+
+
 /**********--  QUIENES SOMOS  --**********/
 /****************************************/
 
 
-h2 {
-    width: 600px;
-    font-family: 'Sedgwick Ave', cursive;
-    text-align: center;
-    padding: 50px;
-    font-size: 50px;
-    font-weight: lighter;
-}
 
 #quienes {
     display: flex;
@@ -121,8 +125,54 @@ h2 {
     justify-content: center;
 }
 
-#quienes h2 {
-    margin-top: 80px;
+.animacion {
+    z-index: 1;
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    margin: 50px;
+    top: 610px;
+    left: 45px;
+}
+
+.puerta1 {
+    display: inline-block;
+    z-index: 1;
+    width: 600px;
+    height: 500px;
+    background-color: #96abc2;
+    opacity: 0.5;
+    animation-name: abrir;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    border-radius: 10px 0 0 10px;
+}
+
+.puerta2 {
+    z-index: 1;
+    float: right;
+    width: 600px;
+    height: 500px;
+    background-color: #96abc2;
+    opacity: 0.5;
+    animation-name: abrir;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    border-radius: 0 10px 10px 0;
+}
+
+@keyframes abrir {
+    
+    from {
+        width: 600px;
+    }
+
+    to {
+        width: 0px;
+    }
+
 }
 
 #quienes p {
@@ -169,26 +219,17 @@ h2 {
   .tecno { grid-area: tecno; }
   
   .titulo { grid-area: titulo; }
-  
-
-#sec_dos h3 {
-    font-family: 'Sedgwick Ave', cursive;
-    font-size: 50px;
-    padding: 30px;
-}
-
-#sec_dos img {
-    opacity: 0.7;
-}
-
-#sec_dos img:hover {
-    opacity: 1;
-}
 
 .titulo {
     grid-area: titulo;
     justify-self: center;
     align-self: center;
+}
+
+#sec_dos h3 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 50px;
+    padding: 30px;
 }
 
 .musica {
@@ -198,13 +239,17 @@ h2 {
     align-items: center;
     justify-items: center;
 }
-
+  
 .cine {
     grid-area: cine;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
+}
+
+#sec_dos .margen_cine {
+    margin-top: 80px;
 }
 
 .tecno {
@@ -215,6 +260,14 @@ h2 {
     justify-items: center;
 }
 
+#sec_dos img {
+    opacity: 0.7;
+}
+
+#sec_dos img:hover {
+    opacity: 1;
+}
+
 #sec_dos p {
     max-width: 400px;
     margin: 10px auto;
@@ -222,10 +275,6 @@ h2 {
     font-size: 20px;
     padding: 15px;
     font-weight: 600;
-}
-
-#sec_dos .margen_cine {
-    margin-top: 80px;
 }
 
 #sec_dos h4 {
@@ -336,218 +385,331 @@ h2 {
     padding-left: 200px;
 }
 
-/**********--  CONTACTO  --**********/
-/***********************************/
 
-#contacto {
-    padding: 50px;
+
+/**********--  MUSICA  --*******************/
+/******************************************/
+
+
+
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica h2 {
+    color: #0034c4;
 }
 
-#contacto h2 {
-    background-color: #96abc2;
-    padding: 5px;
-    width: 250px;
-    border: 1px solid #96abc2;
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card h5 {
+    color: #007fff;
+}
+
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card p {
+    color: white;
+}
+
+.enlaces img {
+    width: 100px;
     margin-top: 50px;
 }
 
-#contacto p {
-    font-family: 'KoHo', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    width: 800px;
-    margin: auto;
-    padding: 50px;
+.card {
+    padding: 5px;
+    margin: 10px;
+    background-color: #313030;
 }
 
-#formulario {
-    padding: 50px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#formulario h3 {
-    font-family: 'Sedgwick Ave', cursive;
-    font-size: 60px;
-    padding: 80px;
-    color: #007fff;
-    text-align: center;
-    text-shadow: 1px 5px #1f1e1e;
-}
-
-#formulario form {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
+.card-group {
     margin-left: auto;
     margin-right: auto;
-    padding: 50px;
 }
 
-#formulario form .campos {
+.menuMusica {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    padding: 20px;
-    margin-bottom: 60px;
 }
 
-#formulario form label {
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'KoHo', sans-serif;
-    background-color: white;
-    padding: 5px;
+.titsesenta {
+    color: #0034c4;
 }
 
-#formulario form input {
-    width: 800px;
-    font-size: 40px;
-    margin-left: 20px;
-    border: none;
-    border-bottom: 2px solid #1f1e1e;
-    background-color: transparent;
+#dos_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #0034c4;
+    background-color: #96abc2;
 }
 
-#formulario form .textarea {
+#tres_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #2d5e41;
+    background-color: #47a15b;
+}
+
+.titsetenta {
+    color: #0034c4;
+}
+
+
+#cuatro_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #efb810;
+    background-color: #cda434;
+}
+
+#cinco_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid white;
+    background-color: #0034c4;
+}
+
+#cinco_musica {
+    margin-bottom: 100px;
+}
+
+
+
+/**********--  CINE  --*********************/
+/******************************************/
+
+
+
+.cineAntiguo {
     display: flex;
-    justify-items: center;
+    flex-direction: column;
 }
 
-#formulario form .enviar {
+.cineAntiguo img {
+    width: 700px;
+    margin-left: 100px;
+    padding: 50px 0 50px 0;
+}
+
+.videoClub {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
 }
 
-#formulario form .enviar button {
-    width: 400px;
-    height: 100px;
-    background-color: #96abc2;
-    border: none;
-    font-family: 'KoHo', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
+.videoClub img {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 50px 0;
 }
 
-textarea {
-    width: 800px;
-    height: 60px;
-    border: none;
-    border-bottom: 2px solid #1f1e1e;
-    font-size: 20px;
-    background-color: transparent;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 20px;
-}
-
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-
-
-  /**********--  CORTINA, QUIENES SOMOS  --**********/
-/**************************************************/
-
-.animacion {
-    z-index: 1;
-    position: absolute;
-    width: 1200px;
-    height: 500px;
-    margin: 50px;
-    top: 610px;
-    left: 45px;
-}
-
-.puerta1 {
-    display: inline-block;
-    z-index: 1;
-    width: 600px;
-    height: 500px;
-    background-color: #96abc2;
-    opacity: 0.5;
-    animation-name: abrir;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-    border-radius: 10px 0 0 10px;
-}
-
-.puerta2 {
-    z-index: 1;
-    float: right;
-    width: 600px;
-    height: 500px;
-    background-color: #96abc2;
-    opacity: 0.5;
-    animation-name: abrir;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-    border-radius: 0 10px 10px 0;
-}
-
-@keyframes abrir {
-    
-    from {
-        width: 600px;
-    }
-
-    to {
-        width: 0px;
-    }
-
-}
-
-/**********--  EN CONSTRUCCION  --**********/
-/*****************************************/
-
-#construccion {
+.pirata {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: 'Sedgwick Ave', cursive;
-    animation-name: mensaje;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+    margin-bottom: 100px;
 }
 
-@keyframes mensaje {
-    0% {
-        font-size: 5px;
-
-    }
-    
-    60% {
-        font-size: 100px;
-        color: white;
-        background-color: #96abc2;
-    }
-
-    100% {
-        font-size: 100px;
-        color: white;
-        background-color: #007fff;
-    }
-}
-
-.parrafos p {
-    font-family: 'KoHo', sans-serif;
-    font-size: 30px;
-    width: 800px;
-    margin: auto;
+.pirata img {
+    width: 600px;
     padding: 50px;
 }
+
+#alquiler .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler . ."
+      "uno dos tres cuatro cinco seis siete ocho nueve diez"
+      "once doce trece catorce quince dieciseis diecisiete dieciocho diecinueve veinte"
+      "veintiuno veintidos veintitres veinticuatro veinticinco veintiseis veintisiete veintiocho veintinueve treinta"
+      "treintiuno treintidos treintitres treinticuatro treinticinco treintiseis treintisiete treintiocho treintinueve cuarenta";
+      margin-bottom: 100px;
+  }
+  
+  .uno { grid-area: uno; }
+  
+  .dos { grid-area: dos; }
+  
+  .tres { grid-area: tres; }
+  
+  .cuatro { grid-area: cuatro; }
+  
+  .cinco { grid-area: cinco; }
+  
+  .seis { grid-area: seis; }
+  
+  .siete { grid-area: siete; }
+  
+  .ocho { grid-area: ocho; }
+  
+  .nueve { grid-area: nueve; }
+  
+  .diez { grid-area: diez; }
+  
+  .once { grid-area: once; }
+  
+  .doce { grid-area: doce; }
+  
+  .trece { grid-area: trece; }
+  
+  .catorce { grid-area: catorce; }
+  
+  .quince { grid-area: quince; }
+  
+  .dieciseis { grid-area: dieciseis; }
+  
+  .diecisiete { grid-area: diecisiete; }
+  
+  .dieciocho { grid-area: dieciocho; }
+  
+  .diecinueve { grid-area: diecinueve; }
+  
+  .veinte { grid-area: veinte; }
+  
+  .veintiuno { grid-area: veintiuno; }
+  
+  .veintidos { grid-area: veintidos; }
+  
+  .veintitres { grid-area: veintitres; }
+  
+  .veinticuatro { grid-area: veinticuatro; }
+  
+  .veinticinco { grid-area: veinticinco; }
+  
+  .veintiseis { grid-area: veintiseis; }
+  
+  .veintisiete { grid-area: veintisiete; }
+  
+  .veintiocho { grid-area: veintiocho; }
+  
+  .veintinueve { grid-area: veintinueve; }
+  
+  .treinta { grid-area: treinta; }
+  
+  .treintiuno { grid-area: treintiuno; }
+  
+  .treintidos { grid-area: treintidos; }
+  
+  .treintitres { grid-area: treintitres; }
+  
+  .treinticuatro { grid-area: treinticuatro; }
+  
+  .treinticinco { grid-area: treinticinco; }
+  
+  .treintiseis { grid-area: treintiseis; }
+  
+  .treintisiete { grid-area: treintisiete; }
+  
+  .treintiocho { grid-area: treintiocho; }
+  
+  .treintinueve { grid-area: treintinueve; }
+  
+  .cuarenta { grid-area: cuarenta; }
+  
+  .tituloAlquiler { grid-area: tituloAlquiler; }
+  
+#alquiler .container img {
+    width: 130px;
+}
+
+#alquiler .container img:hover {
+    transform: scale(2, 2);
+    transition: 2s;
+    border: 5px solid white;
+}
+
+#alquiler .tituloAlquiler h3 {
+    font-size: 4rem;
+    font-family: 'Sedgwick Ave', cursive;
+    padding: 50px;
+    color: #007fff;
+    background-color: #313030;
+    text-align: center;
+}
+
+
+
+/**********-- TECNOLOGIA  --****************/
+/******************************************/
+
+
+
+#dos_tecno {
+    background-color: #96abc2;
+    margin-top: 100px;
+}
+
+#dos_tecno h4 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 3rem;
+}
+
+#dos_tecno .container .telef {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #96abc2;
+}
+
+#dos_tecno .container .telef img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #1f1e1e;
+}
+
+ #dos_tecno .container .telef p {
+    padding: 20px;
+    font-weight: bold;
+}
+
+#tres_tecno h6 {
+    font-size: 2.5rem;
+    padding: 80px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+#tres_tecno iframe {
+    border: 15px solid #2d5e41;
+}
+
+#tres_tecno p {
+    background-color: #313030;
+    color: white;
+    padding: 45px;
+}
+
+#cuatro_tecno {
+    background-color: #96abc2;
+    margin: 50px 0 50px 0;
+}
+
+#cuatro_tecno h4 {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 3rem;
+}
+
+#cuatro_tecno img {
+    padding: 20px;
+}
+
+#cuatro_tecno p {
+    padding: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+#cuatro_tecno .juegos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#cuatro_tecno .juegos img {
+    width: 300px;
+}
+
+#cinco_tecno {
+    margin-bottom: 50px;
+}
+
+
 
 
 /**********--  MULTIMEDIA  --**********/
@@ -735,330 +897,128 @@ textarea {
 }
 
 
-/**********--  MUSICA  --*******************/
-/******************************************/
+
+
+/**********--  CONTACTO  --**********/
+/***********************************/
 
 
 
-
-
-
-#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica h2 {
-    color: #0034c4;
+#contacto {
+    padding: 50px;
 }
 
-.titsesenta {
-    color: #0034c4;
-}
-
-.titsetenta {
-    color: #0034c4;
-}
-
-#dos_musica .card-group .card img {
-    padding: 15px;
-    border: 2px solid #0034c4;
+#contacto h2 {
     background-color: #96abc2;
-}
-
-#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card h5 {
-    color: #007fff;
-}
-
-#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card p {
-    color: white;
-}
-
-.card {
     padding: 5px;
-    margin: 10px;
-    background-color: #313030;
-}
-
-.card-group {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-#tres_musica .card-group .card img {
-    padding: 15px;
-    border: 2px solid #2d5e41;
-    background-color: #47a15b;
-}
-
-
-#cuatro_musica .card-group .card img {
-    padding: 15px;
-    border: 2px solid #efb810;
-    background-color: #cda434;
-}
-
-#cinco_musica .card-group .card img {
-    padding: 15px;
-    border: 2px solid white;
-    background-color: #0034c4;
-}
-
-#cinco_musica {
-    margin-bottom: 100px;
-}
-
-.enlaces img {
-    width: 100px;
+    width: 250px;
+    border: 1px solid #96abc2;
     margin-top: 50px;
 }
 
-.menuMusica {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-/**********--  CINE  --*********************/
-/******************************************/
-
-
-
-.cineAntiguo {
-    display: flex;
-    flex-direction: column;
-}
-
-.cineAntiguo img {
-    width: 700px;
-    margin-left: 100px;
-    padding: 50px 0 50px 0;
-}
-
-.videoClub {
-    display: flex;
-    flex-direction: column;
-}
-
-.videoClub img {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 0 50px 0;
-}
-
-.pirata {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.pirata img {
-    width: 600px;
+#contacto p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    width: 800px;
+    margin: auto;
     padding: 50px;
 }
 
-#alquiler .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler . ."
-      "uno dos tres cuatro cinco seis siete ocho nueve diez"
-      "once doce trece catorce quince dieciseis diecisiete dieciocho diecinueve veinte"
-      "veintiuno veintidos veintitres veinticuatro veinticinco veintiseis veintisiete veintiocho veintinueve treinta"
-      "treintiuno treintidos treintitres treinticuatro treinticinco treintiseis treintisiete treintiocho treintinueve cuarenta";
-      margin-bottom: 100px;
-  }
-  
-  .uno { grid-area: uno; }
-  
-  .dos { grid-area: dos; }
-  
-  .tres { grid-area: tres; }
-  
-  .cuatro { grid-area: cuatro; }
-  
-  .cinco { grid-area: cinco; }
-  
-  .seis { grid-area: seis; }
-  
-  .siete { grid-area: siete; }
-  
-  .ocho { grid-area: ocho; }
-  
-  .nueve { grid-area: nueve; }
-  
-  .diez { grid-area: diez; }
-  
-  .once { grid-area: once; }
-  
-  .doce { grid-area: doce; }
-  
-  .trece { grid-area: trece; }
-  
-  .catorce { grid-area: catorce; }
-  
-  .quince { grid-area: quince; }
-  
-  .dieciseis { grid-area: dieciseis; }
-  
-  .diecisiete { grid-area: diecisiete; }
-  
-  .dieciocho { grid-area: dieciocho; }
-  
-  .diecinueve { grid-area: diecinueve; }
-  
-  .veinte { grid-area: veinte; }
-  
-  .veintiuno { grid-area: veintiuno; }
-  
-  .veintidos { grid-area: veintidos; }
-  
-  .veintitres { grid-area: veintitres; }
-  
-  .veinticuatro { grid-area: veinticuatro; }
-  
-  .veinticinco { grid-area: veinticinco; }
-  
-  .veintiseis { grid-area: veintiseis; }
-  
-  .veintisiete { grid-area: veintisiete; }
-  
-  .veintiocho { grid-area: veintiocho; }
-  
-  .veintinueve { grid-area: veintinueve; }
-  
-  .treinta { grid-area: treinta; }
-  
-  .treintiuno { grid-area: treintiuno; }
-  
-  .treintidos { grid-area: treintidos; }
-  
-  .treintitres { grid-area: treintitres; }
-  
-  .treinticuatro { grid-area: treinticuatro; }
-  
-  .treinticinco { grid-area: treinticinco; }
-  
-  .treintiseis { grid-area: treintiseis; }
-  
-  .treintisiete { grid-area: treintisiete; }
-  
-  .treintiocho { grid-area: treintiocho; }
-  
-  .treintinueve { grid-area: treintinueve; }
-  
-  .cuarenta { grid-area: cuarenta; }
-  
-  .tituloAlquiler { grid-area: tituloAlquiler; }
-  
-#alquiler .container img {
-    width: 130px;
+#formulario {
+    padding: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-#alquiler .tituloAlquiler h3 {
-    font-size: 4rem;
+#formulario h3 {
     font-family: 'Sedgwick Ave', cursive;
-    padding: 50px;
-    color: #007fff;
-    background-color: #313030;
-    text-align: center;
-}
-
-#cineHistoria .pirata {
-    margin-bottom: 100px;
-}
-
-#alquiler .container img:hover {
-    transform: scale(2, 2);
-    transition: 2s;
-    border: 5px solid white;
-}
-
-
-/**********-- TECNOLOGIA  --****************/
-/******************************************/
-
-#dos_tecno {
-    background-color: #96abc2;
-}
-
-#dos_tecno h4 {
-    text-align: center;
-    padding: 50px;
-    font-family: 'Sedgwick Ave', cursive;
-    font-size: 3rem;
-}
-
-#dos_tecno .container .telef img {
-    width: 300px;
-    height: 200px;
-    border: 2px solid #1f1e1e;
-}
-
- #dos_tecno .container .telef p {
-    padding: 20px;
-    font-weight: bold;
-}
-
-#dos_tecno .container .telef {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: #96abc2;
-}
-
-#tres_tecno iframe {
-    border: 15px solid #2d5e41;
-}
-
-#tres_tecno p {
-    background-color: #313030;
-    color: white;
-    padding: 45px;
-}
-
-#tres_tecno h6 {
-    font-size: 2.5rem;
+    font-size: 60px;
     padding: 80px;
-    font-family: 'Sedgwick Ave', cursive;
+    color: #007fff;
+    text-align: center;
+    text-shadow: 1px 5px #1f1e1e;
 }
 
-#cuatro_tecno .juegos img {
-    width: 300px;
-}
-
-#cuatro_tecno {
-    background-color: #96abc2;
-    margin: 50px 0 50px 0;
-}
-
-#cuatro_tecno .juegos {
+#formulario form {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-}
-
-#cuatro_tecno p {
-    padding: 40px;
-    color: black;
-    font-weight: bold;
-}
-
-#cuatro_tecno img {
-    padding: 20px;
-}
-
-#cuatro_tecno h4 {
-    text-align: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 50px;
-    font-family: 'Sedgwick Ave', cursive;
-    font-size: 3rem;
 }
 
-#cinco_tecno {
-    margin-bottom: 50px;
+#formulario form .campos {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px;
+    margin-bottom: 60px;
 }
+
+#formulario form label {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'KoHo', sans-serif;
+    background-color: white;
+    padding: 5px;
+}
+
+#formulario form input {
+    width: 800px;
+    font-size: 40px;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 2px solid #1f1e1e;
+    background-color: transparent;
+}
+
+#formulario form .textarea {
+    display: flex;
+    justify-items: center;
+}
+
+#formulario form .enviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#formulario form .enviar button {
+    width: 400px;
+    height: 100px;
+    background-color: #96abc2;
+    border: none;
+    font-family: 'KoHo', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+textarea {
+    width: 800px;
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #1f1e1e;
+    font-size: 20px;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 
 
 
@@ -1105,13 +1065,13 @@ textarea {
         width: 100%;
     }
       
-     #quienes h2 {
+    #quienes h2 {
         padding: 50px;
         width: 100%;
         margin-top: 150px;
      } 
       
-     #formulario form {
+    #formulario form {
         width: 100%;
     }
 
@@ -1342,14 +1302,10 @@ textarea {
         margin-bottom: 50px;
     }
 
-    
-    
     .cineAntiguo img {
         width: 100%;
         margin-left: 0;
     }
-    
-    
     
     .videoClub img {
         width: 100%;
@@ -1389,7 +1345,7 @@ textarea {
           "cuarenta . .";
       }
 
-      #alquiler .container img {
+    #alquiler .container img {
         width: 100%;
     }
     
@@ -1424,6 +1380,358 @@ textarea {
 
     #cuatro_tecno img {
         align-self: center;
+    }
+
+  }
+  
+
+  /**********--  RESPONSIVE TABLET  --**********/
+/**********************************************/
+
+  
+  
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+    
+/**********--  HEADER  --*******************/
+/******************************************/
+
+
+    header {  
+        background-color: #96abc2;
+        background-image: url(../multimedia/fondo2.jpg);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "logo logo"
+          "titulo titulo"
+          "botonera botonera";
+      }
+
+      .menu li a {
+        padding: 0;
+        color: #0034c4;
+        background-color: transparent;
+        font-family: 'KoHo', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        top: 0;
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        margin: 10px;
+        opacity: 1;
+        align-content: center;
+    }
+
+    .menu li a:hover {
+        border-radius: 0;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        transition: none;
+        border: none;
+    }
+
+    .menu {
+        background-color: #96abc2;
+        padding: 10px;
+    }
+
+    .animacion {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: auto;
+        left: auto;
+    }
+
+    .animacion {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: auto;
+        left: auto;
+    }
+
+/**********--  QUIENES SOMOS (INDEX)  --**********/
+/***********************************************/
+
+
+    #quienes h2 {
+        padding: 50px;
+        width: 100%;
+        margin-top: 150px;
+     } 
+    
+    .carousel img { 
+        height: auto;
+        width: 100%;
+     }
+
+     #sec_dos {  
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        grid-template-areas:
+          "titulo"
+          "musica"
+          "cine"
+          "tecno";
+      }
+
+/**********--  MUSICA  --*******************/
+/******************************************/
+
+    .menuMusica {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enlaces {
+        margin-left: 180px;
+        margin-bottom: 50px;
+    }
+    
+    .parrafos p {
+        font-family: 'KoHo', sans-serif;
+        font-size: 30px;
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+       
+    .cineAntiguo img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .videoClub img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .pirata {
+        flex-direction: column;
+    }
+
+    .pirata img {
+        width: 100%;
+        padding: 50px;
+    }
+
+    #alquiler .container img {
+        width: 100%;
+    }
+    
+    #alquiler .tituloAlquiler h3 {
+        font-size: 4rem;
+        font-family: 'Sedgwick Ave', cursive;
+        padding: 50px;
+        color: #007fff;
+        background-color: #313030;
+        text-align: center;
+    }
+    
+    #cineHistoria .pirata {
+        margin-bottom: 100px;
+    }
+
+    #alquiler .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: column;
+        grid-template-areas:
+          "tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler"
+          "uno dos tres cuatro cinco"
+          "seis siete ocho nueve diez"
+          "once doce trece catorce quince"
+          "dieciseis diecisiete dieciocho diecinueve veinte"
+          "veintiuno veintidos veintitres veinticuatro veinticinco"
+          "veintiseis veintisiete veintiocho veintinueve treinta"
+          "treintiuno treintidos treintitres treinticuatro treinticinco"
+          "treintiseis treintisiete treintiocho treintinueve cuarenta";
+      }
+
+      #dos_tecno .container .telef {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #dos_tecno .container .telef img {
+        width: 300px;
+        height: auto;
+    }
+
+    #tres_tecno iframe {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #cuatro_tecno img {
+        align-self: center;
+    }
+
+    .container_guitarristas {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(22) 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: column;
+        padding: 50px;
+        grid-template-areas:
+          "titulo titulo"
+          "david david"
+          "david_titulo david_titulo"
+          "david_video david_video"
+          "mollo mollo"
+          "mollo_titulo mollo_titulo"
+          "mollo_video mollo_video"
+          "slash slash"
+          "slash_titulo slash_titulo"
+          "slash_video slash_video"
+          "mark mark"
+          "mark_titulo mark_titulo"
+          "mark_video mark_video"
+          "angus angus"
+          "angus_titulo angus_titulo"
+          "angus_video angus_video"
+          "eric eric"
+          "eric_titulo eric_titulo"
+          "eric_video eric_video"
+          "jimi jimi"
+          "jimi_titulo jimi_titulo"
+          "jimi_video jimi_video";
+      }
+      
+      
+    .container_guitarristas .titulo h2 {
+        font-size: 50px;
+    }
+    
+    .container_guitarristas h5 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+    .subti {
+        align-self: center;
+        width: 100%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+    .david, .mollo, .slash, .mark, .angus, .jimi, .eric {
+        display: flex;
+        align-self: center;
+      }
+    
+    .david_video {
+        display: flex;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+    .angus, .angus_titulo, .angus_video {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .jimi, .jimi_titulo, .jimi_video {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .eric, .eric_titulo, .eric_video {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #formulario form {
+        width: 100%;
+    }
+
+    #formulario form .campos {
+        flex-direction: column;
+    }
+
+    #formulario form label {
+        font-size: 20px;
+    }
+    
+    
+    #contacto p {
+        width: 100%;
+    }
+
+    #formulario form input {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #contacto h2 {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    textarea {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #formulario form {
+        width: 100%;
+        background-color: #96abc2;
+    }
+
+    #formulario form label {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    #formulario form #background-video {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    #background-video {
+        display: none;
+      }
+
+      #formulario h3 {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 55px;
+        padding: 80px;
+        padding-top: 32px;
+    }
+
+    #formulario form .enviar button {
+        border: 4px solid white;
     }
 
   }
