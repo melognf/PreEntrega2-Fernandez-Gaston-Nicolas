@@ -113,8 +113,8 @@ nav {
 
 
 
-/**********--  QUIENES SOMOS  --**********/
-/****************************************/
+/**********--  INDEX, QUIENES SOMOS  --**********/
+/**********************************************/
 
 
 
@@ -710,11 +710,8 @@ nav {
 }
 
 
-
-
 /**********--  MULTIMEDIA  --**********/
 /***********************************/
-
 
 
 .container_guitarristas {  display: grid;
@@ -723,6 +720,12 @@ nav {
     gap: 5px 5px;
     grid-auto-flow: row;
     padding: 50px;
+    background-image: url(../multimedia/fondoAzul.jpg);
+    background-size: contain;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
     grid-template-areas:
       ". . . titulo titulo titulo titulo titulo titulo . . ."
       "david david david . david_video david_video mollo mollo mollo . . ."
@@ -784,15 +787,10 @@ nav {
   .jimi_video { grid-area: jimi_video; }
   
   
-
-.container_guitarristas {
-    background-image: url(../multimedia/fondoAzul.jpg);
-    background-size: contain;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-  }
+#guitarristas .container_guitarristas div {
+    display: flex;
+    align-self: center;
+}
 
 .container_guitarristas .titulo h2 {
     font-size: 80px;
@@ -821,46 +819,6 @@ nav {
     background-color: #96abc2;
   }
   
-.david, .mollo, .slash, .mark, .angus, .jimi, .eric {
-    display: flex;
-    align-self: center;
-  }
-
-.david_video {
-    display: flex;
-    align-self: center;
-  }
-
-.mollo_video {
-    display: flex;
-    align-self: center;
-}
-
-.slash_video {
-    display: flex;
-    align-self: center;
-}
-
-.mark_video {
-    display: flex;
-    align-self: center;
-}
-
-.angus_video {
-    display: flex;
-    align-self: center;
-}
-
-.jimi_video {
-    display: flex;
-    align-self: center;
-}
-
-.eric_video {
-    display: flex;
-    align-self: center;
-}
-
 .david, .david_video, .david_titulo {
     border: 5px solid yellow;
     border-radius: 5%;
@@ -895,7 +853,6 @@ nav {
     border: 5px solid red;
     border-radius: 5%;
 }
-
 
 
 
@@ -1026,8 +983,27 @@ textarea {
 /******************************************/
 
 
+
   @media all and (max-width:576px) {
-    
+
+    h2 {
+        width: 100%;
+    }
+
+    .parrafos p {
+        font-family: 'KoHo', sans-serif;
+        font-size: 30px;
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+  
+
+
+/**********--  HEADER  --*******************/
+/******************************************/
+  
+
     header {  
         background-color: #96abc2;
         background-image: url(../multimedia/fondo2.jpg);
@@ -1041,13 +1017,82 @@ textarea {
           "titulo titulo"
           "botonera botonera";
       }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        margin: 10px;
+        opacity: 1;
+        align-content: center;
+    }
+
+    .menu li a {
+        padding: 0;
+        color: #0034c4;
+        background-color: transparent;
+        font-family: 'KoHo', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        top: 0;
+    }
+
+    .menu li a:hover {
+        border-radius: 0;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+        transition: none;
+        border: none;
+    }
     
-      .carousel img { 
+    .menu {
+        background-color: #96abc2;
+    }
+
+/**********--  INDEX, QUIENES SOMOS  --**********/
+/**********************************************/
+    
+
+     .animacion {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: auto;
+        left: auto;
+    }
+
+     .puerta1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .puerta2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #quienes h2 {
+        padding: 50px;
+        width: 100%;
+        margin-top: 150px;
+     } 
+
+    .carousel img { 
         height: auto;
         width: 100%;
      }
 
-     #sec_dos {  
+
+/**********--  INDEX, SECCION 2  --**********/
+/******************************************/
+
+
+    #sec_dos {  
         padding: 20px;
         display: grid;
         grid-template-columns: 1fr;
@@ -1064,255 +1109,34 @@ textarea {
     #sec_dos img {
         width: 100%;
     }
-      
-    #quienes h2 {
-        padding: 50px;
-        width: 100%;
-        margin-top: 150px;
-     } 
-      
-    #formulario form {
-        width: 100%;
-    }
-
-    #formulario form .campos {
-        flex-direction: column;
-    }
-
-    #formulario form label {
-        font-size: 20px;
-    }
     
     
-    #contacto p {
-        width: 100%;
-    }
-
-    #formulario form input {
-        width: 100%;
-        font-size: 20px;
-    }
-
-    #contacto h2 {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    textarea {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
     
-    #formulario form {
-        width: 100%;
-        background-color: #96abc2;
-    }
-
-    #formulario form label {
-        margin-bottom: 30px;
-        width: 100%;
-    }
+/**********--  FOOTER  --*******************/
+/******************************************/
     
-    #formulario form #background-video {
-        width: 100%;
-    }
 
-    h2 {
-        width: 100%;
-    }
-
-    #background-video {
-        display: none;
-      }
-
-      #formulario h3 {
-        font-family: 'Sedgwick Ave', cursive;
-        font-size: 55px;
-        padding: 80px;
-        padding-top: 32px;
-    }
-
-    #formulario form .enviar button {
-        border: 4px solid white;
-    }
-
-    .menu li a {
-        padding: 0;
-        color: #0034c4;
-        background-color: transparent;
-        font-family: 'KoHo', sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        top: 0;
-    }
-
-    .menu li {
-        display: block;
-        text-align: center;
-        margin: 10px;
-        opacity: 1;
-        align-content: center;
-    }
-
-    .menu li a:hover {
-        border-radius: 0;
-        border: none;
-        padding: 0;
-        background-color: transparent;
-        color: black;
-        border-radius: 5px;
-        position: relative;
-        top: 0;
-        transition: none;
-        border: none;
-    }
-
-    .menu {
-        background-color: #96abc2;
-        padding: 10px;
-    }
-
-    .animacion {
-        display: inline-flex;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        top: auto;
-        left: auto;
-    }
-    
-    .puerta1 {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .puerta2 {
-        width: 100%;
-        height: 100%;
-    }
-    
     .pie_de_pagina p {
         max-width: 300px;
         margin: 20px auto;
     }
 
-    
-    @keyframes mensaje {
-        0% {
-            font-size: 5px;
-    
-        }
 
-        60% {
-            font-size: 30px;
-            color: white;
-            background-color: #96abc2;
-        }
-    
-        100% {
-            font-size: 30px;
-            color: white;
-            background-color: #007fff;
-        }
-    }
-    
-    .parrafos p {
-        font-family: 'KoHo', sans-serif;
-        font-size: 30px;
-        width: 100%;
-        margin: auto;
-        padding: 50px;
-    }
+/**********--  CINE  --*********************/
+/******************************************/
 
-    .container_guitarristas {  display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(22) 1fr;
-        gap: 5px 5px;
-        grid-auto-flow: column;
-        padding: 50px;
-        grid-template-areas:
-          "titulo titulo"
-          "david david"
-          "david_titulo david_titulo"
-          "david_video david_video"
-          "mollo mollo"
-          "mollo_titulo mollo_titulo"
-          "mollo_video mollo_video"
-          "slash slash"
-          "slash_titulo slash_titulo"
-          "slash_video slash_video"
-          "mark mark"
-          "mark_titulo mark_titulo"
-          "mark_video mark_video"
-          "angus angus"
-          "angus_titulo angus_titulo"
-          "angus_video angus_video"
-          "eric eric"
-          "eric_titulo eric_titulo"
-          "eric_video eric_video"
-          "jimi jimi"
-          "jimi_titulo jimi_titulo"
-          "jimi_video jimi_video";
-      }
-      
-      
-    .container_guitarristas .titulo h2 {
-        font-size: 50px;
-    }
-    
-    .container_guitarristas h5 {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
-    .subti {
-        align-self: center;
-        width: 100%;
-        height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-    .david, .mollo, .slash, .mark, .angus, .jimi, .eric {
-        display: flex;
-        align-self: center;
-      }
-    
-    .david_video {
-        display: flex;
-        align-self: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
-    .angus, .angus_titulo, .angus_video {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .jimi, .jimi_titulo, .jimi_video {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .eric, .eric_titulo, .eric_video {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
 
     .cineAntiguo img {
         width: 100%;
         margin-left: 0;
     }
-    
+
     .videoClub img {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     .pirata {
         flex-direction: column;
     }
@@ -1321,7 +1145,7 @@ textarea {
         width: 100%;
         padding: 50px;
     }
-    
+
     #alquiler .container {  display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1357,10 +1181,11 @@ textarea {
         background-color: #313030;
         text-align: center;
     }
+
+
+     /**********-- TECNOLOGIA  --****************/
+    /******************************************/
     
-    #cineHistoria .pirata {
-        margin-bottom: 100px;
-    }
 
     #dos_tecno .container .telef {
         display: flex;
@@ -1382,293 +1207,112 @@ textarea {
         align-self: center;
     }
 
+
+
+    /**********--  MULTIMEDIA  --**********/
+   /*************************************/
+    
+
+   .container_guitarristas {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(22) 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: column;
+    padding: 50px;
+    grid-template-areas:
+      "titulo titulo"
+      "david david"
+      "david_titulo david_titulo"
+      "david_video david_video"
+      "mollo mollo"
+      "mollo_titulo mollo_titulo"
+      "mollo_video mollo_video"
+      "slash slash"
+      "slash_titulo slash_titulo"
+      "slash_video slash_video"
+      "mark mark"
+      "mark_titulo mark_titulo"
+      "mark_video mark_video"
+      "angus angus"
+      "angus_titulo angus_titulo"
+      "angus_video angus_video"
+      "eric eric"
+      "eric_titulo eric_titulo"
+      "eric_video eric_video"
+      "jimi jimi"
+      "jimi_titulo jimi_titulo"
+      "jimi_video jimi_video";
   }
   
-
-  /**********--  RESPONSIVE TABLET  --**********/
-/**********************************************/
-
   
-  
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-
-    
-/**********--  HEADER  --*******************/
-/******************************************/
-
-
-    header {  
-        background-color: #96abc2;
-        background-image: url(../multimedia/fondo2.jpg);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "logo logo"
-          "titulo titulo"
-          "botonera botonera";
-      }
-
-      .menu li a {
-        padding: 0;
-        color: #0034c4;
-        background-color: transparent;
-        font-family: 'KoHo', sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        top: 0;
-    }
-
-    .menu li {
-        display: block;
-        text-align: center;
-        margin: 10px;
-        opacity: 1;
-        align-content: center;
-    }
-
-    .menu li a:hover {
-        border-radius: 0;
-        border: none;
-        padding: 0;
-        background-color: transparent;
-        color: black;
-        border-radius: 5px;
-        position: relative;
-        top: 0;
-        transition: none;
-        border: none;
-    }
-
-    .menu {
-        background-color: #96abc2;
-        padding: 10px;
-    }
-
-    .animacion {
-        display: inline-flex;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        top: auto;
-        left: auto;
-    }
-
-    .animacion {
-        display: inline-flex;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        top: auto;
-        left: auto;
-    }
-
-/**********--  QUIENES SOMOS (INDEX)  --**********/
-/***********************************************/
-
-
-    #quienes h2 {
-        padding: 50px;
-        width: 100%;
-        margin-top: 150px;
-     } 
-    
-    .carousel img { 
-        height: auto;
-        width: 100%;
-     }
-
-     #sec_dos {  
-        padding: 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 3fr 3fr;
-        gap: 0px 0px;
-        grid-auto-flow: column;
-        grid-template-areas:
-          "titulo"
-          "musica"
-          "cine"
-          "tecno";
-      }
-
-/**********--  MUSICA  --*******************/
-/******************************************/
-
-    .menuMusica {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .enlaces {
-        margin-left: 180px;
-        margin-bottom: 50px;
-    }
-    
-    .parrafos p {
-        font-family: 'KoHo', sans-serif;
-        font-size: 30px;
-        width: 100%;
-        margin: auto;
-        padding: 50px;
-    }
-       
-    .cineAntiguo img {
-        width: 100%;
-        margin-left: 0;
-    }
-    
-    .videoClub img {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .pirata {
-        flex-direction: column;
-    }
-
-    .pirata img {
-        width: 100%;
-        padding: 50px;
-    }
-
-    #alquiler .container img {
-        width: 100%;
-    }
-    
-    #alquiler .tituloAlquiler h3 {
-        font-size: 4rem;
-        font-family: 'Sedgwick Ave', cursive;
-        padding: 50px;
-        color: #007fff;
-        background-color: #313030;
-        text-align: center;
-    }
-    
-    #cineHistoria .pirata {
-        margin-bottom: 100px;
-    }
-
-    #alquiler .container {  display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 10px 10px;
-        grid-auto-flow: column;
-        grid-template-areas:
-          "tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler"
-          "uno dos tres cuatro cinco"
-          "seis siete ocho nueve diez"
-          "once doce trece catorce quince"
-          "dieciseis diecisiete dieciocho diecinueve veinte"
-          "veintiuno veintidos veintitres veinticuatro veinticinco"
-          "veintiseis veintisiete veintiocho veintinueve treinta"
-          "treintiuno treintidos treintitres treinticuatro treinticinco"
-          "treintiseis treintisiete treintiocho treintinueve cuarenta";
-      }
-
-      #dos_tecno .container .telef {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    #dos_tecno .container .telef img {
-        width: 300px;
-        height: auto;
-    }
-
-    #tres_tecno iframe {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    #cuatro_tecno img {
-        align-self: center;
-    }
-
-    .container_guitarristas {  display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(22) 1fr;
-        gap: 5px 5px;
-        grid-auto-flow: column;
-        padding: 50px;
-        grid-template-areas:
-          "titulo titulo"
-          "david david"
-          "david_titulo david_titulo"
-          "david_video david_video"
-          "mollo mollo"
-          "mollo_titulo mollo_titulo"
-          "mollo_video mollo_video"
-          "slash slash"
-          "slash_titulo slash_titulo"
-          "slash_video slash_video"
-          "mark mark"
-          "mark_titulo mark_titulo"
-          "mark_video mark_video"
-          "angus angus"
-          "angus_titulo angus_titulo"
-          "angus_video angus_video"
-          "eric eric"
-          "eric_titulo eric_titulo"
-          "eric_video eric_video"
-          "jimi jimi"
-          "jimi_titulo jimi_titulo"
-          "jimi_video jimi_video";
-      }
-      
-      
     .container_guitarristas .titulo h2 {
-        font-size: 50px;
-    }
-    
+    font-size: 50px;
+}
+
     .container_guitarristas h5 {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
     .subti {
-        align-self: center;
-        width: 100%;
-        height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
+    align-self: center;
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
     .david, .mollo, .slash, .mark, .angus, .jimi, .eric {
-        display: flex;
-        align-self: center;
-      }
-    
+    display: flex;
+    align-self: center;
+  }
+
     .david_video {
-        display: flex;
-        align-self: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
     .angus, .angus_titulo, .angus_video {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+   .jimi, .jimi_titulo, .jimi_video {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+   .eric, .eric_titulo, .eric_video {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  } 
+
+
+    /**********--  CONTACTO  --**********/
+   /***********************************/
+
     
-    .jimi, .jimi_titulo, .jimi_video {
-        margin-top: 50px;
-        margin-bottom: 50px;
+   #contacto h2 {
+    width: 100%;
+    margin-top: 50px;
     }
-    
-    .eric, .eric_titulo, .eric_video {
-        margin-top: 50px;
-        margin-bottom: 50px;
+
+    #contacto p {
+        width: 100%;
+    }
+
+    #formulario h3 {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 55px;
+        padding: 80px;
+        padding-top: 32px;
     }
 
     #formulario form {
         width: 100%;
+        background-color: #96abc2;
     }
 
     #formulario form .campos {
@@ -1676,24 +1320,28 @@ textarea {
     }
 
     #formulario form label {
+        margin-bottom: 30px;
+        width: 100%;
         font-size: 20px;
     }
     
-    
-    #contacto p {
-        width: 100%;
-    }
-
     #formulario form input {
         width: 100%;
         font-size: 20px;
     }
 
-    #contacto h2 {
-        width: 100%;
-        margin-top: 50px;
+    #formulario form .enviar button {
+        border: 4px solid white;
     }
 
+    #formulario form #background-video {
+        width: 100%;
+    }
+    
+    #background-video {
+        display: none;
+      }
+    
     textarea {
         width: 100%;
         height: auto;
@@ -1701,37 +1349,9 @@ textarea {
         margin-bottom: 10px;
     }
     
-    #formulario form {
-        width: 100%;
-        background-color: #96abc2;
-    }
+}
 
-    #formulario form label {
-        margin-bottom: 30px;
-        width: 100%;
-    }
-    
-    #formulario form #background-video {
-        width: 100%;
-    }
 
-    h2 {
-        width: 100%;
-    }
+  
 
-    #background-video {
-        display: none;
-      }
-
-      #formulario h3 {
-        font-family: 'Sedgwick Ave', cursive;
-        font-size: 55px;
-        padding: 80px;
-        padding-top: 32px;
-    }
-
-    #formulario form .enviar button {
-        border: 4px solid white;
-    }
-
-  }
+ 
