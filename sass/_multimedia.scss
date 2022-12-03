@@ -1,0 +1,134 @@
+#guitarristas .container_guitarristas div {
+    display: flex;
+    align-self: center;
+}
+
+.container_guitarristas {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    padding: 50px;
+    background-image: url(../multimedia/fondoAzul.jpg);
+    background-size: contain;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    grid-template-areas:
+      ". . . titulo titulo titulo titulo titulo titulo . . ."
+      "david david david . david_video david_video mollo mollo mollo . . ."
+      "david david david david_titulo david_video david_video mollo mollo mollo . . ."
+      ". slash slash . . . mollo mollo mollo . mollo_video mollo_video"
+      ". slash slash . . . mollo mollo mollo mollo_titulo mollo_video mollo_video"
+      ". slash slash . slash_video slash_video . . . . . ."
+      ". slash slash slash_titulo slash_video slash_video mark mark mark . mark_video mark_video"
+      "angus angus angus . . . mark mark mark mark_titulo mark_video mark_video"
+      "angus angus angus . angus_video angus_video . . . . . ."
+      "angus angus angus angus_titulo angus_video angus_video jimi jimi jimi . jimi_video jimi_video"
+      ". . . . . . jimi jimi jimi . jimi_video jimi_video"
+      "eric eric eric eric eric_titulo eric_video eric_video . . jimi_titulo . ."
+      "eric eric eric eric . eric_video eric_video . . . . .";
+      .titulo { grid-area: titulo;
+        & h2 {
+            font-size: 80px;
+            font-family: $letraUno;
+            align-self: flex-end;
+            padding: 20px;
+            color: $blanco;
+        }
+     }
+  
+  .david { grid-area: david; }
+  
+  .david_titulo { grid-area: david_titulo; }
+  
+  .david_video { grid-area: david_video; }
+  
+  .mollo { grid-area: mollo; }
+  
+  .mollo_titulo { grid-area: mollo_titulo; }
+  
+  .mollo_video { grid-area: mollo_video; }
+  
+  .slash { grid-area: slash; }
+  
+  .slash_titulo { grid-area: slash_titulo; }
+  
+  .slash_video { grid-area: slash_video; }
+  
+  .mark { grid-area: mark; }
+  
+  .mark_titulo { grid-area: mark_titulo; }
+  
+  .mark_video { grid-area: mark_video; }
+  
+  .angus { grid-area: angus; }
+  
+  .angus_titulo { grid-area: angus_titulo; }
+  
+  .angus_video { grid-area: angus_video; }
+  
+  .eric { grid-area: eric; }
+  
+  .eric_titulo { grid-area: eric_titulo; }
+  
+  .eric_video { grid-area: eric_video; }
+  
+  .jimi { grid-area: jimi; }
+  
+  .jimi_titulo { grid-area: jimi_titulo; }
+  
+  .jimi_video { grid-area: jimi_video; }
+  & img {
+    width: 100%;
+  }
+  & h5 {
+    color: $azul;
+    padding: 20px;
+    font-family: $letraDos;
+    font-weight: 900;
+  }
+  .subti {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: $claro;
+  }
+  & .david, .david_video, .david_titulo {
+    border: 5px solid yellow;
+    border-radius: 5%;
+  }
+
+& .mollo, .mollo_titulo, .mollo_video {
+    border: 5px solid green;
+    border-radius: 5%;
+  }
+
+& .slash, .slash_titulo, .slash_video {
+    border: 5px solid white;
+    border-radius: 5%;
+}
+
+& .mark, .mark_video, .mark_titulo {
+    border: 5px solid aqua;
+    border-radius: 5%;
+}
+
+& .angus, .angus_titulo, .angus_video {
+    border: 5px solid crimson;
+    border-radius: 5%;
+}
+
+& .jimi, .jimi_titulo, .jimi_video {
+    border: 5px solid black;
+    border-radius: 5%;
+}
+
+& .eric, .eric_titulo, .eric_video {
+    border: 5px solid red;
+    border-radius: 5%;
+}
+  
+  }

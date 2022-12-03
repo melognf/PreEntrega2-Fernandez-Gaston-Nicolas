@@ -1,0 +1,99 @@
+#contacto {
+    padding: 50px;
+    & h2 {
+        background-color: $claro;
+        padding: 5px;
+        width: 250px;
+        border: 1px solid $claro;
+        margin-top: 50px;
+    }
+    & p {
+        font-family: $letraDos;
+        font-size: 30px;
+        font-weight: 600;
+        width: 800px;
+        margin: auto;
+        padding: 50px;
+    }
+}
+#formulario {
+    padding: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    & h3 {
+        font-family: $letraUno;
+        font-size: 60px;
+        padding: 80px;
+        color: $celeste;
+        text-align: center;
+        text-shadow: 1px 5px $grisOscuro;
+    }
+    & form {
+        display: flex;
+        flex-direction: column;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+        & .campos {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+        & label {
+            font-size: 30px;
+            font-weight: 600;
+            font-family: $letraDos;
+            background-color: $blanco;
+            padding: 5px;
+        }
+        & input {
+            width: 800px;
+            font-size: 40px;
+            margin-left: 20px;
+            border: none;
+            border-bottom: 2px solid $grisOscuro;
+            background-color: transparent;
+        }
+        & .textarea {
+            display: flex;
+            justify-items: center;
+        }
+        & .enviar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            & button {
+                @include dimensiones (400px, 100px);
+                background-color: $claro;
+                border: none;
+                font-family: $letraDos;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+textarea {
+    @include dimensiones (800px, 60px);
+    border: none;
+    border-bottom: 2px solid $grisOscuro;
+    font-size: 20px;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+#background-video {
+    @include dimensiones (100vw, 100vh);
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }

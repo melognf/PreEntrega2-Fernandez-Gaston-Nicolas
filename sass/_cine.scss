@@ -1,0 +1,141 @@
+.cineAntiguo {
+    display: flex;
+    flex-direction: column;
+    & img {
+        width: 700px;
+        margin-left: 100px;
+        padding: 50px 0 50px 0;
+    }
+}
+.videoClub {
+    display: flex;
+    flex-direction: column;
+    & img {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px 0 50px 0;
+    }
+}
+.pirata {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    & img {
+        width: 600px;
+        padding: 50px;
+    }
+}
+#alquiler .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler tituloAlquiler . ."
+      "uno dos tres cuatro cinco seis siete ocho nueve diez"
+      "once doce trece catorce quince dieciseis diecisiete dieciocho diecinueve veinte"
+      "veintiuno veintidos veintitres veinticuatro veinticinco veintiseis veintisiete veintiocho veintinueve treinta"
+      "treintiuno treintidos treintitres treinticuatro treinticinco treintiseis treintisiete treintiocho treintinueve cuarenta";
+      margin-bottom: 100px;
+      .uno { grid-area: uno; }
+  
+  .dos { grid-area: dos; }
+  
+  .tres { grid-area: tres; }
+  
+  .cuatro { grid-area: cuatro; }
+  
+  .cinco { grid-area: cinco; }
+  
+  .seis { grid-area: seis; }
+  
+  .siete { grid-area: siete; }
+  
+  .ocho { grid-area: ocho; }
+  
+  .nueve { grid-area: nueve; }
+  
+  .diez { grid-area: diez; }
+  
+  .once { grid-area: once; }
+  
+  .doce { grid-area: doce; }
+  
+  .trece { grid-area: trece; }
+  
+  .catorce { grid-area: catorce; }
+  
+  .quince { grid-area: quince; }
+  
+  .dieciseis { grid-area: dieciseis; }
+  
+  .diecisiete { grid-area: diecisiete; }
+  
+  .dieciocho { grid-area: dieciocho; }
+  
+  .diecinueve { grid-area: diecinueve; }
+  
+  .veinte { grid-area: veinte; }
+  
+  .veintiuno { grid-area: veintiuno; }
+  
+  .veintidos { grid-area: veintidos; }
+  
+  .veintitres { grid-area: veintitres; }
+  
+  .veinticuatro { grid-area: veinticuatro; }
+  
+  .veinticinco { grid-area: veinticinco; }
+  
+  .veintiseis { grid-area: veintiseis; }
+  
+  .veintisiete { grid-area: veintisiete; }
+  
+  .veintiocho { grid-area: veintiocho; }
+  
+  .veintinueve { grid-area: veintinueve; }
+  
+  .treinta { grid-area: treinta; }
+  
+  .treintiuno { grid-area: treintiuno; }
+  
+  .treintidos { grid-area: treintidos; }
+  
+  .treintitres { grid-area: treintitres; }
+  
+  .treinticuatro { grid-area: treinticuatro; }
+  
+  .treinticinco { grid-area: treinticinco; }
+  
+  .treintiseis { grid-area: treintiseis; }
+  
+  .treintisiete { grid-area: treintisiete; }
+  
+  .treintiocho { grid-area: treintiocho; }
+  
+  .treintinueve { grid-area: treintinueve; }
+  
+  .cuarenta { grid-area: cuarenta; }
+  
+  .tituloAlquiler { grid-area: tituloAlquiler; }
+  
+  & img {
+    width: 130px;
+    &:hover {
+        transform: scale(2, 2);
+        transition: 2s;
+        border: 5px solid $blanco;
+    }
+    
+}
+  }
+  #alquiler .tituloAlquiler h3 {
+    font-size: 4rem;
+    font-family: $letraUno;
+    padding: 50px;
+    color: $celeste;
+    background-color: $gris;
+    text-align: center;
+}

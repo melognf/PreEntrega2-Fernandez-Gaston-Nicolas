@@ -1,0 +1,21 @@
+$celeste: #007fff;
+$azul: #0034c4;
+$claro: #96abc2;
+$blanco: white;
+$grisOscuro: #1f1e1e;
+$gris: #313030;
+
+$letraUno: 'Sedgwick Ave', cursive;
+$letraDos: 'KoHo', sans-serif;
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin dimensiones ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

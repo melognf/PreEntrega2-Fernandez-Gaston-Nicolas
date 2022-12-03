@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    width: 600px;
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 80px;
+}
+
+.parrafos p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+}
+
+@import "variables";
+@import "header";
+@import "index";
+@import "musica";
+@import "cine";
+@import "tecnologia";
+@import "multimedia";
+@import "contacto";
+@import "footer";
+@import "mediaQ";
+
+
+
+
+
+

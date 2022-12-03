@@ -1,0 +1,27 @@
+{
+  "name": "segunda-preentrega",
+  "version": "1.0.0",
+  "description": "pagina dedicada a cosas del pasado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": 
+    "node-sass --include-path scss sass/principal.scss css/estilosNuevo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melognf/segunda-preEntrega.git"
+  },
+  "author": "Gaston Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melognf/segunda-preEntrega/issues"
+  },
+  "homepage": "https://github.com/melognf/segunda-preEntrega#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

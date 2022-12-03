@@ -1,0 +1,145 @@
+#quienes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    & .animacion {
+        z-index: 1;
+        position: absolute;
+        @include dimensiones (1200px, 500px);
+        margin: 50px;
+        top: 610px;
+        left: 45px;
+        & .puerta1 {
+            display: inline-block;
+            z-index: 1;
+            @include dimensiones (600px, 500px);
+            background-color: $claro;
+            opacity: 0.5;
+            animation-name: abrir;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            border-radius: 10px 0 0 10px;
+        }
+        & .puerta2 {
+            z-index: 1;
+            float: right;
+            @include dimensiones (600px, 500px);
+            background-color: $claro;
+            opacity: 0.5;
+            animation-name: abrir;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            border-radius: 0 10px 10px 0;
+        }
+        @keyframes abrir {
+    
+            from {
+                width: 600px;
+            }
+        
+            to {
+                width: 0px;
+            }
+        
+        }
+    }
+}
+#quienes p {
+    font-family: 'KoHo', sans-serif;
+    font-size: 30px;
+    padding: 50px;
+    padding-top: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+#sec_uno .carousel img {
+    @include dimensiones (80%, 600px);
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ #sec_dos {  
+    margin-bottom: 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "musica cine tecno"
+      "musica cine tecno"
+      "musica cine tecno"
+      "musica cine tecno"
+      "musica cine tecno";
+      .musica { grid-area: musica;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+     }
+     .cine { grid-area: cine;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-items: center;
+             .margen_cine {
+                margin-top: 80px;
+            }
+     }
+     .tecno { grid-area: tecno;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-items: center;
+     }
+     .titulo { grid-area: titulo;
+               justify-self: center;
+               align-self: center;
+     }
+     & h3 {
+        font-family: $letraUno;
+        font-size: 50px;
+        padding: 30px;
+    }
+    & img {
+        opacity: 0.7;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    & p {
+        max-width: 400px;
+        margin: 10px auto;
+        font-family: $letraDos;
+        font-size: 20px;
+        padding: 15px;
+        font-weight: 600;
+    }
+    & h4 {
+        font-family: $letraUno;
+        font-size: 25px;
+        padding: 20px;
+        text-align: center;
+        color: black;
+        &:hover {
+            font-family: $letraUno;
+            color: $azul;
+            background-color: $claro;
+            transition: 0.5s ease-in;
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    & a {
+        text-decoration: none;
+    }
+  }
+

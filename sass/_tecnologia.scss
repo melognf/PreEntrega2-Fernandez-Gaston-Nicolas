@@ -1,0 +1,67 @@
+#dos_tecno {
+    background-color: $claro;
+    margin-top: 100px;
+    & h4 {
+        text-align: center;
+        padding: 50px;
+        font-family: $letraUno;
+        font-size: 3rem;
+    }
+    & .container .telef {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        background-color: $claro;
+        & img {
+            @include dimensiones (300px, 200px);
+            border: 2px solid $grisOscuro;
+        }
+        & p {
+            padding: 20px;
+            font-weight: bold;
+        }
+    }
+}
+#tres_tecno h6 {
+    font-size: 2.5rem;
+    padding: 80px;
+    font-family: $letraUno;
+}
+#tres_tecno iframe {
+    border: 15px solid #2d5e41;
+}
+#tres_tecno p {
+    background-color: $gris;
+    color: $blanco;
+    padding: 45px;
+}
+#cuatro_tecno {
+    background-color: $claro;
+    margin: 50px 0 50px 0;
+    & h4 {
+        text-align: center;
+        padding: 50px;
+        font-family: $letraUno;
+        font-size: 3rem;
+    }
+    & img {
+        padding: 20px;
+    }
+    & p {
+        padding: 40px;
+        color: black;
+        font-weight: bold;
+    }
+}
+#cuatro_tecno .juegos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    & img {
+        width: 300px;
+    }
+}
+#cinco_tecno {
+    margin-bottom: 50px;
+}

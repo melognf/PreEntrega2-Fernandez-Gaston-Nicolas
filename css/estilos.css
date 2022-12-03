@@ -1057,7 +1057,7 @@ textarea {
 /**********************************************/
     
 
-     .animacion {
+    .animacion {
         display: inline-flex;
         width: 100%;
         height: 100%;
@@ -1066,7 +1066,7 @@ textarea {
         left: auto;
     }
 
-     .puerta1 {
+    .puerta1 {
         width: 100%;
         height: 100%;
     }

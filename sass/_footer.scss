@@ -1,0 +1,69 @@
+.pie_de_pagina {
+    @include flex (column, center, center);
+    height: auto;
+    background-color: $grisOscuro;
+    text-align: center;
+    & h2 {
+        color: $celeste;
+    }
+    & p {
+        padding: 20px;
+        padding-top: 0;
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 30px;
+        font-size: 20px;
+        color: $celeste;
+        font-family: $letraDos;
+        font-weight: 600;
+    }
+    & .redes li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 20px;
+        & a img {
+            width: 30px;
+        }
+    }
+    & .footer-menu ul {
+        list-style-type: none;
+        padding: 15px 15px;
+        & li {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px solid #007fff;
+            border-radius: 25px;
+            background-color: transparent;
+            margin: 10px;
+            color: $celeste;
+            font-family: $letraDos;
+            font-weight: 600;
+            &:hover {
+                display: inline-block;
+                padding: 10px 15px;
+                border-radius: 25px;
+                border: 1px solid $blanco;
+                background-color: $blanco;
+                margin: 0 10px;
+                color: black;
+                font-family: $letraDos;
+                font-weight: 600;
+            }
+        }
+    }
+    
+}
+.derechos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $grisOscuro;
+    & p {
+        padding: 20px;
+        font-family: $letraDos;
+        color: $blanco;
+    }
+}
+.copy {
+    padding-left: 200px;
+}

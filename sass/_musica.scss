@@ -1,0 +1,57 @@
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica h2 {
+    color: $azul;
+}
+
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card h5 {
+    color: $celeste;
+}
+
+#dos_musica, #tres_musica, #cuatro_musica, #cinco_musica, .card-group .card p {
+    color: $blanco;
+}
+
+#dos_musica .titsesenta {
+    color: $azul;
+}
+
+.titsetenta, .titsesenta {
+    color: $azul;
+}
+
+.card-group {
+    margin-left: auto;
+    margin-right: auto;
+    .card {
+        padding: 5px;
+        margin: 10px;
+        background-color: $gris;
+        & img {
+            padding: 15px;
+            border: 2px solid $azul;
+            background-color: $claro;
+        }
+    }
+}
+.menuMusica {
+    display: flex;
+    flex-direction: row;
+}
+#tres_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #2d5e41;
+    background-color: #47a15b;
+}
+#cuatro_musica .card-group .card img {
+    padding: 15px;
+    border: 2px solid #efb810;
+    background-color: #cda434;
+}
+#cinco_musica {
+    margin-bottom: 100px;
+}
+
+.enlaces a img {
+    width: 100px;
+    margin-top: 50px;
+}
+
