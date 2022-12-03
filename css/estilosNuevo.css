@@ -829,7 +829,7 @@ textarea {
     padding: 50px;
     grid-template-areas: "titulo titulo" "david david" "david_titulo david_titulo" "david_video david_video" "mollo mollo" "mollo_titulo mollo_titulo" "mollo_video mollo_video" "slash slash" "slash_titulo slash_titulo" "slash_video slash_video" "mark mark" "mark_titulo mark_titulo" "mark_video mark_video" "angus angus" "angus_titulo angus_titulo" "angus_video angus_video" "eric eric" "eric_titulo eric_titulo" "eric_video eric_video" "jimi jimi" "jimi_titulo jimi_titulo" "jimi_video jimi_video"; }
   .container_guitarristas .titulo h2 {
-    font-size: 50px; }
+    font-size: 40px; }
   .container_guitarristas h5 {
     margin-left: auto;
     margin-right: auto; }
