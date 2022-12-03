@@ -803,7 +803,7 @@ textarea {
       width: 100%; }
   #alquiler .tituloAlquiler h3 {
     font-size: 4rem;
-    font-family: 'Sedgwick Ave', cursive;
+    font-family: "Sedgwick Ave", cursive;
     padding: 50px;
     color: #007fff;
     background-color: #313030;
@@ -862,7 +862,7 @@ textarea {
   #contacto p {
     width: 100%; }
   #formulario h3 {
-    font-family: 'Sedgwick Ave', cursive;
+    font-family: "Sedgwick Ave", cursive;
     font-size: 55px;
     padding: 80px;
     padding-top: 32px; }
